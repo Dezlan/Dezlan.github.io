@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>James Waters</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="img/favicon.jpg">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+
+
+
+
+
+
+
+
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#myCarousel  .item {
+  height: 600px;
+  background-color:#bbb;
+}
+#myCarousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer {
+  background-color:#414141;
+}
+
+#footer a {
+  color:#efefef;
+}
+
+header {
+  background: #333;
+  color:#555;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+h1 {
+  font-size:50px;
+}
+
+.logo {
+  font-size:40px;
+  position:absolute;
+  z-index:1200;
+  color:#333;
+  top:70px;
+  text-align:center;
+  width:100%;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+  
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+  
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+  
+/* customize nav style */
+.navbar-custom {
+    background-color: #2e2e2e;
+	font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+	color: #ddd;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+	color: #eee;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+	background-color: #000;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.divider {
+	height:50px;
+}
+
+.panel {
+	border-width:0;
+}
+
+@media (max-width: 768px) {
+	header {
+	
+	}
+}
+
+#map-canvas {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
+
+section {
+  color: #ffffff;
+  min-height: 400px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+}
+
+.bg-1 {
+	background: url('img/c1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+      filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+}
+
+.bg-2 {
+	background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+     
+}
+
+.bg-3 {
+	background: url('img/na1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+     
+}
+
+.bg-4 {
+	padding-top:30px;
+    background-color:#e6e6e6;
+ 
+.panel .img-responsive {
+	min-height:270px;
+    max-height:270px;
+}
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+        
+        <!-- Wrap all page content here -->
+<div id="wrap">
+
+ 
+<header class="masthead">
+
+  	<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/c1.jpg" alt="c1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Digital Art</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/d1.jpg" alt="c1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>3D Design</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/na1.jpg" alt="c1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Branding</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>       
+      </div><!-- /.carousel-inner -->
+      <div class="logo">James Waters</div> 
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>  
+    </div>
+    <!-- /.carousel -->
+  
+</header>
+  
+  
+<!-- Fixed navbar -->
+<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav nav-justified">
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Profile</a></li>
+          <li class="dropdown">
+            <a href="#section3" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Academic</a></li>
+              <li><a href="#">Commercial</a></li>
+              <li><a href="#">Financial</a></li>
+              <li><a href="#">Interior Design</a></li>
+              <li><a href="#">Medical</a></li>
+              <li><a href="#">Religious</a></li>
+            </ul>
+          </li>
+          <li><a href="#section4">Location</a></li>
+          <li><a href="#section5">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div><!--/.navbar -->
+  
+<!-- Begin page content -->
+<div class="divider" id="section1"></div>
+  
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1">
+    <div class="page-header text-center">
+      <h1>Interactive Media</h1>
+    </div>
+    
+    <p class="lead text-center"> 
+      Multimedia Production
+    </p> 
+    
+    <hr>
+    
+    <div class="divider"></div>
+    
+  </div>
+</div>
+    
+<div class="divider"></div>
+  
+<section class="bg-1">
+  <div class="col-sm-6 col-sm-offset-3 text-center"></div>
+</section>
+  
+<div class="divider" id="section2"></div>
+   
+<div class="row">
+  	<div class="col-sm-10 col-sm-offset-1">
+      <h1>Profile</h1>
+      
+      <hr>
+     
+      <p>Hi!
+
+I’m James Waters, also known by my internet alias “Dezlan”… Or “Dexrend” when the default is taken :D
+
+My goal is to become an Interactive Media Development professional.
+
+I’m 20 years old and currently living in Thunder Bay, Ontario. I’m originally from Mayfield Kentucky, USA. I’m enrolled in Confederation College’s Multimedia Productions course, or at least i was. The program was revamped after my first year, it became the Interactive Media Development program.
+
+When I’m not working in the Mac labs with my trusty headset and Wacom tablet, I’m probably at home researching new technologies or brushing up on some code.
+
+I have a solid grasp on most of the prominent programs used in the IMD industry, and I’d like to say that I’m proficient with more than a few.
+
+Though I’m skilled at creating three dimensional models, I struggle at creating hand drawn illustrations.
+
+I currently work in the following programs.
+
+Adobe CC (Photoshop, Flash, Illustrator, INDesign, Bridge, After Effects, Premier, Audition, and Dreamweaver)
+Autodesk 3DS Max
+Unity Technology’s Unity Engine
+PaintTool SAI (for skeleton illustrations, or right into flash for vectors)
+Celtx (story boards, scripts, treatments)
+FocusWriter (hobby writing)
+I focus my skills in these areas.
+
+3D Modeling and Animation
+Javascript, PHP, HTML, CSS, AS3, general coding.
+I’m open for project collaborations. If you’re an artist looking for a generalist who can help round out a project you’re working on, count me in.
+
+animation of pre-existing character (Flash, 3DS Max into a .gif/.mov)
+character movement in 2D space (Flash, Unity, Adobe Air/Unity Web deployment)
+Asset management
+8 bit soundtracks
+8/16 bit pixel characters (Probably the closest thing to hand drawn characters I can achieve right now.)
+Video editing and Computer generated effects.
+2D and 3D logos and digital illustrations for print or web.
+Responsive Website Design, hosting, and upkeep.</p>
+      
+      <hr>
+      
+      <div class="divider"></div>
+      
+  	</div><!--/col-->
+</div><!--/container-->
+
+<div class="divider"></div>
+  
+<section class="bg-3">
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h2 style="padding:20px;background-color:rgba(5,5,5,.8)">Projects and Services</h2></div>
+</section>
+  
+<div class="divider" id="section3"></div>
+  
+<div class="bg-4">
+  <div class="container">
+	<div class="row">
+	   <div class="col-sm-4 col-xs-6">
+      
+        <div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#" title="Mini Projects"><img src="img/h1.jpg" alt="c1" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Mini Projects</p>
+            <p></p>
+
+          </div>
+        </div><!--/panel-->
+      </div><!--/col-->
+      
+      <div class="col-sm-4 col-xs-6">
+      
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#" title="Interactive"><img src="img/g1.jpg" alt="c1" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Interactive</p>
+            <p></p>
+            
+          </div>
+        </div><!--/panel--> 
+      </div><!--/col-->
+      
+      <div class="col-sm-4 col-xs-6">
+      
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#" title="Coding"><img src="img/code1.jpg" alt="c1" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Code</p>
+            <p></p>
+            
+          </div>
+        </div><!--/panel--> 
+
+      </div><!--/col--> 
+      
+      <div class="col-sm-4 col-xs-6">
+      
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#" title="Digital Art"><img src="img/c1.jpg" alt="c1" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Digital Art</p>
+            <p></p>
+            
+          </div>
+        </div><!--/panel--> 
+
+      </div><!--/col--> 
+      
+      <div class="col-sm-4 col-xs-6">
+      
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#" title="3D Design"><img src="img/na1.jpg" alt="c1" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>3D Design</p>
+            <p></p>
+            
+          </div>
+        </div><!--/panel--> 
+
+      </div><!--/col--> 
+      
+      <div class="col-sm-4 col-xs-6">
+      
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#" title="Graphic Design"><img src="img/p1.png" alt="c1" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Graphic Design</p>
+            <p></p>
+            
+          </div>
+        </div><!--/panel--> 
+
+      </div><!--/col--> 
+      
+	</div><!--/row-->
+  </div><!--/container-->
+</div>
+
+<div class="divider" id="section4"></div>
+
+  <div class="col-md-8 col-md-offset-1">
+  </div>
+</div>
+  
+<div class="row">
+  
+  <div class="col-sm-10 col-sm-offset-1">
+      <h1>Location</h1>
+  </div>   
+       
+  <div id="map-canvas"></div>
+  
+  <hr>
+  
+  <div class="col-sm-8"></div>
+  <div class="col-sm-3 pull-right">
+
+      <address>
+        James Waters<br>
+        <span id="map-input">
+        613 River Ave<br>
+        Rainy River, ON P0W1L0</span><br>
+        P: (807) 276-5321
+      </address>
+    
+      <address>
+        <strong>Email Me</strong><br>
+        <a href="mailto:#">JWDezlan@gmail.com</a>
+      </address>          
+  </div>
+  
+</div><!--/row-->
+  
+<div class="divider" id="section5"></div>  
+
+
+  
+<div class="container">
+  	<div class="col-sm-8 col-sm-offset-2 text-center">
+
+      <ul class="list-inline center-block">
+        <li><a href="http://facebook.com"><img src="img/facebook.png" alt="c1"></a></li>
+        <li><a href="http://twitter.com"><img src="img/twitter.png" alt="c1"></a></li>
+        <li><a href="http://google.com"><img src="img/google.png" alt="c1"></a></li>
+      </ul>
+      
+  	</div><!--/col-->
+</div><!--/container-->
+  
+
+
+<div id="footer">
+  <div class="container">
+    <p class="text-muted">Copyright ©2014 JWDezlan</p>
+  </div>
+</div>
+
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+
+<div class="modal" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+	<div class="modal-header">
+		<button class="close" type="button" data-dismiss="modal">×</button>
+		<h3 class="modal-title"></h3>
+	</div>
+	<div class="modal-body">
+		<div id="modalCarousel" class="carousel">
+ 
+          <div class="carousel-inner">
+           
+          </div>
+          
+          <a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          
+        </div>
+	</div>
+	<div class="modal-footer">
+    <a href="https://www.behance.net/J_Undertow">Behance</a> <a href="http://dezlan.deviantart.com/">Deviant Art</a>
+		<button class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+   </div>
+  </div>
+</div>
+
+
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<script type='text/javascript' src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
+
+        
+        <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            $('.carousel').carousel({interval:false});
+
+/* affix the navbar after scroll below header */
+$('#nav').affix({
+      offset: {
+        top: $('header').height()-$('#nav').height()
+      }
+});	
+
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#nav' })
+
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},1000);
+})
+
+/* smooth scrolling for nav sections */
+$('#nav .navbar-nav li>a').click(function(){
+  var link = $(this).attr('href');
+  var posi = $(link).offset().top;
+  $('body,html').animate({scrollTop:posi},700);
+});
+
+
+/* copy loaded thumbnails into carousel */
+$('.panel .img-responsive').on('load', function() {
+  
+}).each(function(i) {
+  if(this.complete) {
+  	var item = $('<div class="item"></div>');
+    var itemDiv = $(this).parent('a');
+    var title = $(this).parent('a').attr("title");
+    
+    item.attr("title",title);
+  	$(itemDiv.html()).appendTo(item);
+  	item.appendTo('#modalCarousel .carousel-inner'); 
+    if (i==0){ // set first item active
+     item.addClass('active');
+    }
+  }
+});
+
+/* activate the carousel */
+$('#modalCarousel').carousel({interval:false});
+
+/* change modal title when slide changes */
+$('#modalCarousel').on('slid.bs.carousel', function () {
+  $('.modal-title').html($(this).find('.active').attr("title"));
+})
+
+/* when clicking a thumbnail */
+$('.panel-thumbnail>a').click(function(e){
+  
+    e.preventDefault();
+    var idx = $(this).parents('.panel').parent().index();
+  	var id = parseInt(idx);
+  	
+  	$('#myModal').modal('show'); // show the modal
+    $('#modalCarousel').carousel(id); // slide carousel to selected
+  	return false;
+});
+
+
+
+
+
+/* google maps */
+google.maps.visualRefresh = true;
+
+var map;
+function initialize() {
+	var geocoder = new google.maps.Geocoder();
+	var address = $('#map-input').text(); /* change the map-input to your address */
+	var mapOptions = {
+    	zoom: 15,
+    	mapTypeId: google.maps.MapTypeId.ROADMAP,
+     	scrollwheel: false
+	};
+	map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+	
+  	if (geocoder) {
+      geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+          map.setCenter(results[0].geometry.location);
+
+            var infowindow = new google.maps.InfoWindow(
+                {
+                  content: address,
+                  map: map,
+                  position: results[0].geometry.location,
+                });
+
+            var marker = new google.maps.Marker({
+                position: results[0].geometry.location,
+                map: map, 
+                title:address
+            }); 
+
+          } else {
+          	alert("No results found");
+          }
+        }
+      });
+	}
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+/* end google maps */
+
+
+        
+        });
+        
+        </script>
+        
+    </body>
+</html>
