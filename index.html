@@ -1,223 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="assets/ico/12.ico">
 
-    <title>Dezlan Games</title>
+    <title>James Waters</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
 
-    <!-- Custom Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-</head>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+html{background-image:url('assets/img/bg.png');}
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+.img-responsive {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Dezlan</span> Games
-                </a>
-            </div>
+.img-responsive:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 
+}
+</style>
+  </head>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#download">Games</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Add Me!</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="navbar-brand" src="assets/img/mcskull.png" alt="skull">
         </div>
-        <!-- /.container -->
-    </nav>
-
-    <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-
-                        <h1 class="brand-heading">Let's Go!</h1>
-                        <p class="intro-text">I'm Dezlan, a 21 year old gamer and Interactive Media Professional.</p>
-
-                        
-
-                        <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Who?</h2>
-
-                <p>I don't have a lot of time for games, but when I do, I prefer playing with friends (or cool people, I don't have to know you.) Feel free to add me, send reqeusts, and/or messages. I'm well mannered and mature, but I still like to have a good time.</p>
-
-                <p>
-                    Outside of gaming, I'm into creating things that people can interact with.
-                    Games, Art, Websites, all sorts of weird things.
-                    <br />
-                    I'm currently 2 years into a 3 year Interactive Media Development / Multimedia Productions Diploma. Doing pretty well with an overall 4.0 GPA.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>What Do I Play?</h2>
-                        <p>
-                            I play pretty much everything, from FPS to RTS to MOBA to MMO.
-                            <br />
-                            Hell, I have a maxed combat level Runescape Character... I know...
-                            <br />
-                            
-
-                        </p>
-                        <h2>On PS3</h2>
-  <div class="row">
-    <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://sheattack.com/myblog/wp-content/uploads/2013/12/ultrasflogothumb.jpg" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://www.hdwallpapers.in/walls/call_of_duty_ghosts-HD.jpg" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://www.wallpaper4me.com/images/wallpapers/codmw3-294849.jpeg" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://wallofscribbles.com/wp-content/uploads/2011/02/borderlands2.jpg" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://www.thehollywoodnews.com/wp-content/uploads/Assassins-Creed-Film.jpg" class="thumbnail img-responsive">
-        </a>
-    </div>
-    <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://www.brawlcustommusic.com/music/logos/683.png" class="thumbnail img-responsive">
-        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
 
-  </div>
-  <hr>
-    <br><br>
-<br />
-                       
-  <div class="row">
-        <h1> On PC </h1>
+    <div class="container">
+
+      <div class="starter-template">
+        
+        <object width="100" height="170" data="char.swf">
+          <param name ="movie" value="char.swf">
+          <embed src="char.swf" width="100" height="170" />
+          
+        </object>
+
+
+        <h1>James Waters</h1>
+        <p class="lead">Interactive Media Development - Confederation College - Game Design</p>
         <br />
-    <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://assets1.ignimgs.com/vid/thumbnails/user/2014/06/12/minecraftps4.jpg" class="thumbnail img-responsive">
-        </a>
+        <br />
+        
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/1.jpg" alt="" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/2.jpg" alt="" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/3.jpg" alt="" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/4.jpg" alt=""/></div>
+  </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/5.jpg" alt=""/></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/6.jpg" alt=""/></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/7.jpg" alt=""/></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/8.jpg" alt=""/></div>
     </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://pximagez.com/wp-content/uploads/2014/03/league_of_legends_wallpaper.jpg"class="thumbnail img-responsive">
-        </a>
+    <!--Start of new-->
+    <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/9.jpg" alt=""/></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/10.jpg" alt="" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/11.jpg" alt="" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/12.jpg" alt="" /></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/13.jpg" alt=""/></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/14.jpg" alt="" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/15.jpg" alt="" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/img/16.jpg" alt="" /></div>
+  </div>
+
+      </div>
+
+         
+<div class="col-md-12">
+    <h1>Luft- Android Mobile Game</h1>
+    <p>In my spare time, I've been working on a mobile game inspired by skypirates. For the prototype, I'm currently working in 8-bit graphics and Adobe Air for Android. The prototype will be available in browser, install, and .apk form.</p>
+    <div>
+<span class="badge">Posted 2014-04-14 7:21pm</span><div class="pull-right">
+<span class="label label-danger">GameDesign</span></div>         
+     </div>
     </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://downloads.2kgames.com/civ5/godsandkings/us/downloads/wallpaper/wallpaper_1/16x10/1920x1200_flat.jpg" class="thumbnail img-responsive">
-        </a>
+
+    
+      <br />
+
+        
+<div class="col-md-12">
+    <h1>Unity Project</h1>
+    <p>We've been working on a Hack and slash prototype for our Major Project class. At Honor's End is a short project we've been working on to teach ourselves how to develop the functionality needed for 3D game design. I'm heading the coding department on the project, and assisting on 3D + animations. We hope to continue over the summer to have a great portfolio piece.</p>
+    <div>
+<span class="badge">Posted 2014-04-14 5:56pm</span><div class="pull-right">
+<span class="label label-danger">GameDesign</span></div>         
+     </div>
     </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://4.bp.blogspot.com/-Eoa3Uh_HUfc/UtUww1-7DQI/AAAAAAAAN2w/Y7oermCTjmY/s2560/meepo-dota-2-hd-wallpaper-1920x1200.jpg" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://bestgamewallpapers.com/files/forsaken-world/servants-of-the-goddess-illyfue_wide.jpg" class="thumbnail img-responsive">
-        </a>
-    </div>
-    <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://cdn3.dualshockers.com/wp-content/uploads/2014/05/dayz1.png?57efa4" class="thumbnail img-responsive">
-        </a>
-    </div>
-</div>
-                        <iframe width="560" height="315" src="//www.youtube.com/embed/8eb5vY1KBxU" frameborder="1" allowfullscreen></iframe>
-
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Add Me!</h2>
-                <p>DezlanGames / HelloThisIsBear / EthanBlackwell on PS3 <br />*First for BlackOps2 - Borderlands - Ultra Street Figher IV, Second for Ghosts and MW3, Third for BF4 and Defiance.* </p>
-                <br />
-                <a href="http://steamcommunity.com/id/Dezlan/"><p>Dezlan on Steam</p></a>
-                <br />
-                <p>grange-dezlan on Skype</p>
-                <br />
-                <p>Dezlan on League of Legends</p>
-            </div>
-        </div>
-    </section>
+    <br />
+    <br />
+  </div>
+    <!-- /.container -->
 
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- Core JavaScript Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  ga('create', 'UA-50079100-1', 'dezlan.github.io');
+  ga('send', 'pageview');
 
-    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
-</body>
-
+</script>
+  </body>
 </html>
